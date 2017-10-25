@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(235, 227, 227);
+}
+
+#textbox {
+    border-radius: 10px;
+}
+
+.test {
+    text-align: center;
+}
+
+#searchItem {
+    background-color: #000;
+    position: relative;
+    width: 80%;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+}
