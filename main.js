@@ -13,11 +13,12 @@ $(document).ready(function () {
                 success: function (data) {
                     //$('#testBox').append(data);
                     console.log(data);
-                    for(i = 1; i < data.length; i++){
-                        for(j = 0; j < data[i].length; j++) {
-                            console.log(data[1][0]);
+                    for(var i = 0; i < data[1].length; i++){
+                            console.log(data[1][i]);
+                            console.log(data[2][i]);
+                            console.log(data[3][i]);                            
                            //$('#searchItem').append(data[i][j]); 
-                        }
+                        
                     }
                     const test1 = data[1][0];
                     const test2 = data[2][0];
