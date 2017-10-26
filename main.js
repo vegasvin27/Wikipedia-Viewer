@@ -18,7 +18,7 @@ $(document).ready(function () {
                         // console.log(data[2][i]);
                         // console.log(data[3][i]);
                         $('#searchItem').show();
-                        $('#searchItem').append("<a href=" + data[3][i] + "><h2>" + data[1][i] + "</h2>" + "<p>" + data[2][i] + "</p></a>");
+                        $('#searchItem').append("<div><a target='_blank' href=" + data[3][i] + "><h2>" + data[1][i] + "</h2>" + "<p>" + data[2][i] + "</p></a></div>");
 
                     }
                     /* const test1 = data[1][0];
@@ -27,16 +27,18 @@ $(document).ready(function () {
                     $('#searchItem').append(test1);
                     $('#searchItem').append(test2);
                     $('#searchItem').append(test3); */
-
+                    
                     //const urlLink = data.query.pages[0].fullurl;
                     //console.log(urlLink);
                 }
             });
         }
     });
-
-
-
+    $( "#clear" ).click(function() {
+        $( "a" ).empty();
+        $( "p" ).empty();
+        $( "a" ).empty();
+      });
 });
 
 
