@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+
+
+
+
     $('#textbox').keypress(function (e) {
         var pageTitle = $('#textbox').val();
         if (e.which == 13) {
@@ -27,18 +31,36 @@ $(document).ready(function () {
                     $('#searchItem').append(test1);
                     $('#searchItem').append(test2);
                     $('#searchItem').append(test3); */
-                    
+
                     //const urlLink = data.query.pages[0].fullurl;
                     //console.log(urlLink);
+
+
+
+                    $('#searchItem').css({
+                        'position': 'absolute',
+                        'background linear-gradient': 'to right, blue, yellow',
+                        'text-align': 'center',
+                        'left': '50%',
+                        'color': '#fff',
+                        'top': '50%',
+                        'width': '100%',
+                        'height': '100%',
+                        'margin': '70px 0 0 -150px',
+                    });
+
                 }
             });
         }
     });
-    $( "#clear" ).click(function() {
-        $( "a" ).empty();
-        $( "p" ).empty();
-        $( "a" ).empty();
-      });
+
+    //function to clear info on page
+    $("#clear").click(function () {
+        $("#textbox").val(''); //clears input box
+        $("a").remove();
+        $("p").remove();
+        $("#searchItem").remove();
+    });
 });
 
 

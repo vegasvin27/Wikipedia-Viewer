@@ -1,5 +1,8 @@
 body{
-    background-color: rgb(235, 227, 227);
+    /* background-image: url('images/learn.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background: linear-gradient(to right, blue, yellow);
 }
 
 #textbox {
@@ -8,18 +11,28 @@ body{
 
 #test {
     text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -100px 0 0 -150px;
+    /* border: 5px solid blue; */
 }
 
-#searchItem {
+h1 {
+    color: #fff;
+}
+
+/* #searchItem {
     position: relative;
+    left: 50%;
+    top: 50%;
     width: 100%;
-    height: 100px;
+    height: 100%;
     display: none;
     text-align: center;
-    margin: auto;
+    margin: -100px 0 0 -150px;
     padding-bottom: 10px;
     color: #fff;
     border-radius: 10px;
     border: 5px solid blue;  
-}
-
+} */
